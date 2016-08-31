@@ -1,19 +1,36 @@
 {
-  "name": "JSON Formatter",
-  "version": "0.6.0",
-  "manifest_version": 2,
-  "description": "Makes JSON easy to read. Open source.",
-  "homepage_url": "https://github.com/callumlocke/json-formatter",
-  "minimum_chrome_version": "21",
-  "icons": {
-       "128": "icons/128.png",
-       "32": "icons/32.png"
-  },
-  "background": {
-    "scripts": ["js/background.js"]
-  },
-  "content_scripts": [
-    { "matches": ["<all_urls>"], "js": ["js/content.js"], "run_at": "document_start" }
-  ],
-  "permissions":["*://*/*", "<all_urls>"]
+    "author": "Hermit Dave",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "description": "Makes JSON easy to read. Open source.",
+    "homepage_url": "https://github.com/callumlocke/json-formatter",
+    "icons": {
+        "32": "icons/32.png",
+        "128": "icons/128.png"
+    },
+    "manifest_version": 2,
+    "minimum_edge_version": "33.14281.1000.0",
+    "name": "JSON Formatter",
+    "permissions": [
+        "*://*/*",
+        "<all_urls>"
+    ],
+    "version": "0.6.0",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
 }

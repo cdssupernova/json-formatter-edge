@@ -20,15 +20,15 @@ A background worker is used to prevent the UI freezing when processing very long
 Installation
 ------------
 
-**Option 1** – just install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/bcjindcccaagfpapjjmafapmmgkkhgoa).
-
-**Option 2** – install it from source:
+**Option 1** – Sideloading Edge Extensions:
 
 * clone/download this repo,
-* open Chrome and go to `chrome://chrome/extensions/`,
-* enable "Developer mode",
-* click "Load unpacked extension",
-* select the `extension` folder in this repo.
+* open Edge and go to `about:flags`,
+* check "Enable extension developer features (this might put your device at risk)",
+* Restart Edge browser",
+* Open extensions page and click Load extension.
+* Navigate to the extension directory of this repo and click Select Folder.
+* If JSON isn't being parsed, please check that the extension is enabled.
 
 **Some URLs to try it on:**
 
