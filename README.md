@@ -1,7 +1,7 @@
 JSON Formatter
 ==============
 
-Chrome extension for printing JSON and JSONP nicely when you visit it 'directly' in a browser tab.
+Microsoft Edge extension for rendering JSON and JSONP nicely when you visit it 'directly' in a browser tab.
 
 Features
 --------
